@@ -1,0 +1,8 @@
+{
+  "name": "Video Recorder & Transcriber",
+  "description": "A web application to record video and audio, transcribe the speech in real-time, and download the results with synchronized subtitles.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}

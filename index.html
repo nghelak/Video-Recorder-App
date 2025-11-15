@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Recorder & Transcriber</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+        .recording-dot {
+            animation: pulse 1.5s infinite ease-in-out;
+        }
+        .transcript-chunk {
+            transition: color 0.1s ease-in-out, font-weight 0.1s ease-in-out;
+            cursor: pointer;
+        }
+        .transcript-chunk:hover {
+            color: #374151; /* text-gray-700 */
+        }
+        .highlighted-chunk {
+            color: #000; /* text-black */
+            font-weight: 600; /* semibold */
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/"
+  }
+}
+</script>
+</head>
+<body class="bg-gray-100">
+    <div id="root"></div>
+</body>
+</html>
